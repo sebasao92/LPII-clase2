@@ -8,6 +8,7 @@ body {
 }
 
 .contenedor-principal {
+    position: relative;
     display: flex;
     border: 2px solid black;
     width: 35%;
@@ -18,12 +19,23 @@ body {
     border-radius: 2rem;
 }
 
+.contenedor-principal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 45%;
+    background-color: blue;
+    border-radius: 2rem 2rem 0 0;
+}
+
 .image-perfil {
     height: 100%;
     width: 100%;
 }
 
 .contenedor-imagen {
+    position: relative;
     border: 5px solid blue;
     border-radius: 50%;
     width: 15rem;
@@ -54,4 +66,11 @@ body {
     height: 100%;
     border-radius: 50%;
 }
+
+.link:hover {
+    box-shadow: 0 0 2rem black;
+    cursor: pointer;
+}
+
+
 
