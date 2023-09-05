@@ -7,8 +7,8 @@
 }
 
 :root {
-    --backgroung-principal: #3b419e; /*Variable que puede ser usada en cualquier parte del archivo con la función var() */
-    --color-letra: white;
+    --background-principal: #3b419e; /*Variable que puede ser usada en cualquier parte del archivo con la función var() */
+    --color-letra: white; /*Variable que puede ser usada en cualquier parte del archivo con la función var() */
 }
 
 body {
@@ -16,14 +16,13 @@ body {
 }
 
 .header {
-    position: fixed; /*El elmento es fijado al viewport, es decir que si se hace scroll, el elmento seguirá en la posición fijada*/
+    position: fixed; /*El elemento es fijado al viewport, es decir que si se hace scroll, el elmento seguirá en la posición fijada*/
     top: 0;
     display: flex;
     width: 100%;
-    border: 2px solid black;
-    justify-content: space-between;
+    justify-content: space-between; /* Los elementos del contenedor se envian hacia los lados */
     align-items: center;
-    background-color: var(--backgroung-principal);
+    background-color: var(--background-principal);
     padding: 0 0.5rem 0 2rem; /*TOP: 0px RIGHT: 8px BOTTOM: 0px LEFT: 32px*/
 }
 
@@ -34,12 +33,12 @@ body {
 .header .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around; /* Se le da un margen igual a cada elemento del contenedor */
     align-items: center;
     height: 100%;
     width: 30vw;
     padding: 1rem;
-    background-color: var(--backgroung-principal);
+    background-color: var(--background-principal);
 }
 
 .navbar a {
@@ -55,20 +54,21 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    border: 5px solid black;
 }
 
 .link:hover {
     box-shadow: 0 0 2rem black;
-    cursor: pointer;
+    cursor: pointer; /* el puntero se convierte en una manito */
 }
 
 section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; /* Se le da un margen igual a cada elemento del contenedor */
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: var(--backgroung-principal);
+    background-color: var(--background-principal);
 }
 
 .contenedor-texto {
@@ -84,4 +84,5 @@ section {
 .seccion-uno img {
     border-radius: 50%;
     height: 50%;
+    border: 5px solid black;
 }
